@@ -6,7 +6,7 @@ import Vehicles from "./components/Vehicles/Vehicles";
 import Vehicle from "./components/Categories/Vehicle";
 import CreateCategory from './components/CreateCategory/CreateCategory';
 import CreateVehicle from './components/CreateVehicle/CreateVehicle';
-import TripCharge from './components/TripCharge/TripCharge';
+import Trip_Charge from './components/Categories/Trip_Charge';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 
@@ -21,8 +21,9 @@ function App(){
                         <Route path="/create-vehicle" component={CreateVehicle}/>
                         <Route path="/" component={Categories} exact />
                         <Route path="/vehicles" component={Vehicles} exact />
-                        <Route path="/trip-charge" component={TripCharge} />
                         <Route path="/:id" component={Vehicle} />
+                       <Route path="/trip-charge/:id1/:id2" component={Trip_Charge} />
+
 
                     </Switch>
                 </section>

@@ -28,7 +28,7 @@ class Vehicles extends Component {
     render() {
         return(
             <div className="container">
-                <h1>Categories</h1>
+                <h1>Vehicles</h1>
                 {this.state.vehicles.length > 0 && this.state.vehicles.map((item,index) => (
                     <div key={index} className="card mb-3">
                         <div className="p-3" >
@@ -36,6 +36,7 @@ class Vehicles extends Component {
                             <h5>Model: {item.model}</h5>
                             <h5>Type: {item.type}</h5>
                             <h5>Name: {item.name}</h5>
+                            <h5>Cost: {item.amount}</h5>
                         </div>
 
                     </div>
