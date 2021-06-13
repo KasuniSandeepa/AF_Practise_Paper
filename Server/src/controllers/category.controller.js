@@ -64,11 +64,11 @@ const calculateTripCharge = async (req, res) => {
             console.log(req.body);
         }else if(req.body.duration  >= 2 ){
             durationCost = 2000;
-        }else if(req.body.duration  >=  4 ){
+        }else if(2 < req.body.duration  >=  4 ){
             durationCost = 4000;
-        }else if(req.body.duration  >=  5 ){
+        }else if(4 < req.body.duration  >=  5 ){
             durationCost = 6000;
-        }else if(req.body.duration  >= 6 ){
+        }else if(5 < req.body.duration  >= 6 ){
             durationCost = 8000;
         }
 
